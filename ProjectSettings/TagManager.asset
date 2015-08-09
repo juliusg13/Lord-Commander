@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Monster
+  - Controller
+  - Wall
   layers:
   - Default
   - TransparentFX
