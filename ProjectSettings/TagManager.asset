@@ -8,6 +8,7 @@ TagManager:
   - Monster
   - Controller
   - Wall
+  - Lord
   layers:
   - Default
   - TransparentFX
