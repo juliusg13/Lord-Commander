@@ -7,7 +7,7 @@ public class MonsterBehaviour : MonoBehaviour {
 	public float health;
 	
 	public Quaternion rotation = Quaternion.identity;
-	string direction = "south"; 
+//	string direction = "south"; 
 	
 	
 	// Use this for initialization
