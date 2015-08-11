@@ -192,6 +192,22 @@ Prefab:
     - {fileID: 11443242, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &664163811 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 123860, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
+  m_PrefabInternal: {fileID: 421754344}
+--- !u!114 &664163812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664163811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf1f5b21cbf80f46b1973d795759571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
 --- !u!1001 &691045222
 Prefab:
   m_ObjectHideFlags: 0
@@ -254,7 +270,6 @@ GameObject:
   - 92: {fileID: 876389818}
   - 124: {fileID: 876389817}
   - 81: {fileID: 876389816}
-  - 114: {fileID: 876389821}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -328,21 +343,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!114 &876389821
+--- !u!1 &1015087147 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 123860, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
+  m_PrefabInternal: {fileID: 1992417832}
+--- !u!114 &1015087148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 876389815}
+  m_GameObject: {fileID: 1015087147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4240da2b7717fea49b97cf89f36b99c2, type: 3}
+  m_Script: {fileID: 11500000, guid: caf1f5b21cbf80f46b1973d795759571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  shotPos: {fileID: 0}
-  shotForce: 1000
-  moveSpeed: 10
+  Projectile: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
 --- !u!1 &1369306243 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 190402, guid: d43303b7df2d2d847a0df0d317970bfb, type: 2}
@@ -499,6 +515,22 @@ Prefab:
     - {fileID: 11443242, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1749866703 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 123860, guid: 5642657b6d4a3244091f45fa5859b9e9, type: 2}
+  m_PrefabInternal: {fileID: 1692407595}
+--- !u!114 &1749866704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749866703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf1f5b21cbf80f46b1973d795759571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
 --- !u!1001 &1992417832
 Prefab:
   m_ObjectHideFlags: 0
