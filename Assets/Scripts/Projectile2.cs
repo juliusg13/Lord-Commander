@@ -17,7 +17,7 @@ public class Projectile2 : MonoBehaviour {
 	//public float speed = 1;
 
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.tag == "Monster" ) {
+		if (other.gameObject.tag == "Destroy" ) {
 			Destroy (this.gameObject);
 		}
 		
