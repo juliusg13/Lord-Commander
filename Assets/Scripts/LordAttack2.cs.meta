@@ -1,11 +1,15 @@
 fileFormatVersion: 2
 guid: caf1f5b21cbf80f46b1973d795759571
-timeCreated: 1439254276
+timeCreated: 1439338009
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - Projectile: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
+  - Note: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
+  - BeerSpillSmall: {instanceID: 0}
+  - BeerSpillMedium: {instanceID: 0}
+  - BeerSpillBig: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
