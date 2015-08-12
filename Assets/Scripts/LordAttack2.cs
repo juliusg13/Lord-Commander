@@ -46,7 +46,7 @@ public class LordAttack2 : MonoBehaviour {
 	IEnumerator Fire(GameObject Monster)
 	{
 		allowFire = false;
-		GameObject newNote = (GameObject)Instantiate (Note, new Vector3 (transform.position.x , transform.position.y, transform.position.z), Quaternion.identity);
+		GameObject newNote = (GameObject)Instantiate (Note, new Vector3 (0.52f , -0.18f, -1f), transform.rotation);
 		
 		
 		GameObject groupie = Monster;
@@ -61,7 +61,8 @@ public class LordAttack2 : MonoBehaviour {
 			//} else {
 		newNote.GetComponent<Projectile2> ().target = Monster.transform;
 			//}
-		newNote.GetComponent<Projectile2> ().initialPos = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
+		//newNote.GetComponent<Projectile2> ().initialPos = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
+			newNote.GetComponent<Projectile2> ().initialPos = new Vector3 (0.52f , -0.18f, -1f);
 		newNote.GetComponent<Projectile2> ().radius = this.GetComponent<CircleCollider2D> ().radius;
 			yield return new WaitForSeconds (fireRate);
 			allowFire = true;
