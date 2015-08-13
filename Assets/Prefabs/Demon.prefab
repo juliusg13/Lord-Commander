@@ -90,6 +90,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc65ff716673794b9442a74cafb2fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Projectile: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
+  fireRate: 0
+  nextShot: 0
+  allowFire: 1
+  fireOK: 1
+  proj: {fileID: 0}
+  JustShotDelay: 0
 --- !u!114 &11455200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,6 +147,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Projectile
+      value: 
+      objectReference: {fileID: 144280, guid: 5d20a5cb1ff17c440832b3a6ebbfd34d, type: 2}
+    - target: {fileID: 0}
+      propertyPath: allowFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fireOK
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

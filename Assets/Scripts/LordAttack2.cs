@@ -25,8 +25,11 @@ public class LordAttack2 : MonoBehaviour {
 			//newShot.AddForce = new Vector2(transform.forward * 200f);
 
 			GameObject projectile = Instantiate( Projectile, new Vector3 (0.52f, -0.18f, -1f), transform.rotation ) as GameObject;
-			//projectile.GetComponent<Projectile2>().myTarget = this.transform;
-			Vector2 force = new Vector2(0f, 3f);
+			projectile.GetComponent<Projectile2>().target = this.gameObject;
+			float speed = projectile.GetComponent<Projectile2>().speed;
+			//Vector2 force = new Vector2(speed, 0);
+			Vector2 force = transform.forward * speed;
+
 			projectile.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
 		}
 	}
