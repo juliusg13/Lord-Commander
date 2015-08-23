@@ -12,6 +12,7 @@ public class MonsterBehaviour : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		health = 2;
 		//	controller = GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller>();
 		//currentSpeed = moveSpeed;
 	}

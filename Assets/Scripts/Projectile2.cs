@@ -6,12 +6,14 @@ public class Projectile2 : MonoBehaviour {
 	//public float speed = 1;
 	public GameObject target;
 	public float speed = 10;
+	GameObject Lord;
+
 
 	float MonsterSpeed;
 
 	// Use this for initialization
 	void Start () {
-
+		Lord = GameObject.FindGameObjectWithTag("Lord");
 	}
 	
 	// Update is called once per frame
@@ -25,6 +27,11 @@ public class Projectile2 : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.tag == "Monster" ) {
+			other.gameObject.GetComponent<MonsterBehaviour>().health -= 1;
+			if(other.gameObject.GetComponent<MonsterBehaviour>().health == 0){
+				Destroy(other.gameObject);
+				//Lord.GetComponent<Animator>().SetBool("JustShot", true);
+			}
 			Destroy (this.gameObject);
 		}
 	}
