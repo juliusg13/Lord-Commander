@@ -1,11 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ControllerScript : MonoBehaviour {
 	GameObject Lord;
+	public int Coinage;
+	public Text CoinageText;
+
 	// Use this for initialization
 	void Start () {
+		Coinage = 0;
+
 		Lord = GameObject.FindGameObjectWithTag("Lord");
+		CoinageText.text = "Coinage: " + Coinage.ToString ();
 	}
 	
 	// Update is called once per frame
@@ -25,5 +32,10 @@ public class ControllerScript : MonoBehaviour {
 		} else {
 			Lord.GetComponent<Animator> ().SetBool ("JustShot", true);
 		}
+	}
+	public void increaseCoinage(int money){
+		Coinage += money;
+		CoinageText.text = "Coinage: " + Coinage.ToString ();
+
 	}
 }

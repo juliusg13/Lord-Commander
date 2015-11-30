@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Lord
   - Destroy
+  - Coinage
   layers:
   - Default
   - TransparentFX

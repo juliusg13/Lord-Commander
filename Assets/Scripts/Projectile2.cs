@@ -7,12 +7,13 @@ public class Projectile2 : MonoBehaviour {
 	public GameObject target;
 	public float speed = 10;
 	GameObject Lord;
-
+	private ControllerScript controller;
 
 	float MonsterSpeed;
 
 	// Use this for initialization
 	void Start () {
+		controller = GameObject.FindGameObjectWithTag ("Controller").GetComponent<ControllerScript> ();
 		Lord = GameObject.FindGameObjectWithTag("Lord");
 	}
 	
@@ -26,12 +27,16 @@ public class Projectile2 : MonoBehaviour {
 
 	}
 	void OnTriggerEnter2D(Collider2D other){
+		bool lol = false;
 		if (other.gameObject.tag == "Monster" ) {
 			other.gameObject.GetComponent<MonsterBehaviour>().health -= 1;
+
 			if(other.gameObject.GetComponent<MonsterBehaviour>().health == 0){
+				lol = true;
 				Destroy(other.gameObject);
 				//Lord.GetComponent<Animator>().SetBool("JustShot", true);
 			}
+			if(lol == true) controller.increaseCoinage(3);
 			Destroy (this.gameObject);
 		}
 	}
