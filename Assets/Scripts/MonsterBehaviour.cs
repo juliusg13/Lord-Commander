@@ -5,6 +5,9 @@ public class MonsterBehaviour : MonoBehaviour {
 		
 	public float moveSpeed;
 	public float health;
+	public int damage;
+	bool attackPossible;
+	private ControllerScript controller;
 
 	//private bool isCollision;
 	
@@ -14,7 +17,9 @@ public class MonsterBehaviour : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		health = 2;
+		//health = 2;
+		attackPossible = false;
+		controller = GameObject.FindGameObjectWithTag ("Controller").GetComponent<ControllerScript> ();
 		//	controller = GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller>();
 		//currentSpeed = moveSpeed;
 	}
@@ -36,6 +41,17 @@ public class MonsterBehaviour : MonoBehaviour {
 		isCollision = false;
 	}
 	*/
-	
+	void OnCollisionEnter2D(Collision2D other){
+		//Debug.Log ("wtf");
+	//	if (other.tag == "Wall") {
+		//float delay = 1;
+		//Invoke("attackCastle", 1f);
+		//}
+		attackPossible = true;
+		InvokeRepeating ("damageCastle", 0.15f, 1.15f);
+	}
+	void damageCastle(){
+		controller.damageCastle (damage);
+	}
 }
 	
